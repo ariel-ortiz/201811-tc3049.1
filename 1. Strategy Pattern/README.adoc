@@ -1,0 +1,9 @@
+= Class Exercise: Strategy Pattern 
+
+Study carefully the classes called `Student`, `StudentStrategy`, and `Course` contained in the `strategy.rb` file. They are part of a partial implementation of a software system that uses the _strategy pattern_. You must implement in this same file three concrete strategies for this system:
+
+- *CountGenderStrategy*: Strategy for counting the number of students with a certain gender (male or female) in a course.
+- *ComputeAverageGPAStrategy*: Strategy for computing the average of all the students’ GPA (_Grade Point Average_) scores in a course. Returns `nil` if the course has no students.
+- *BestGPAStrategy*: Strategy for getting the name of the student with the highest GPA score in a course. Returns `nil` if the course has no students.
+
+These three classes must extend the `StudentStrategy` class. See the corresponding unit tests in the `strategy_test.rb` file for more specific details and examples.
