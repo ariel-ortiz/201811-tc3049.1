@@ -1,4 +1,6 @@
 class Student
+  
+  include Comparable
 
   attr_reader :id, :name, :gender, :gpa
 
@@ -7,6 +9,10 @@ class Student
     @name = name
     @gender = gender
     @gpa = gpa
+  end
+  
+  def <=>(other)
+    @id <=> other.id
   end
 
 end
