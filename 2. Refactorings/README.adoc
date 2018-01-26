@@ -1,0 +1,23 @@
+= Class Exercise: Refactorings
+
+Review carefully the contents of the `student.rb` and `student_test.rb` files. One by one, perform the following refactorings:
+
+["upperroman"]
+
+. http://proquestcombo.safaribooksonline.com/book/web-development/ruby/9780321603968/organizing-data/ch08lev1sec9[Replace Magic Number with Symbolic Constant]
+
+. http://proquestcombo.safaribooksonline.com/book/web-development/ruby/9780321603968/making-method-calls-simpler/ch10lev1sec1[Rename Method]
+
+. http://proquestcombo.safaribooksonline.com/book/web-development/ruby/9780321603968/composing-methods/ch06lev1sec7[Split Temporary Variable]
+
+. http://proquestcombo.safaribooksonline.com/book/web-development/ruby/9780321603968/composing-methods/ch06lev1sec1[Extract Method]
+
+. http://proquestcombo.safaribooksonline.com/book/web-development/ruby/9780321603968/making-method-calls-simpler/ch10lev1sec11[Hide Method]
+
+. http://proquestcombo.safaribooksonline.com/book/web-development/ruby/9780321603968/composing-methods/ch06lev1sec6[Introduce Explaining Variable]
+
+. http://proquestcombo.safaribooksonline.com/book/web-development/ruby/9780321603968/making-method-calls-simpler/ch10lev1sec13[Replace Error Code with Exception]
+
+. http://proquestcombo.safaribooksonline.com/book/web-development/ruby/9780321603968/composing-methods/ch06lev1sec14[Introduce Named Parameter]
+
+. http://proquestcombo.safaribooksonline.com/book/web-development/ruby/9780321603968/composing-methods/ch06lev1sec11[Replace Loop with Collection Closure Method]
