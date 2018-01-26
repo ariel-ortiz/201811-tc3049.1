@@ -1,4 +1,7 @@
 class Student
+  
+  GOOD_GRADE = 85
+  POVERTY_LEVEL_INCOME = 15_000
 
   attr_reader :name, :id, :anual_income
 
@@ -42,7 +45,7 @@ class Student
       value += grade
     end
     value = value / @grades.size.to_f
-    (value >= 85) and (@anual_income < 15_000)
+    (value >= GOOD_GRADE) and (@anual_income < POVERTY_LEVEL_INCOME)
   end
 
 end
