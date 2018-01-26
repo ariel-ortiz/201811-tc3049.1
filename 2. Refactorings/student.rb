@@ -31,6 +31,8 @@ class Student
     (average >= GOOD_GRADE) and (@anual_income < POVERTY_LEVEL_INCOME)
   end
   
+  private
+  
   def average
     sum = 0
     @grades.each do |grade|
