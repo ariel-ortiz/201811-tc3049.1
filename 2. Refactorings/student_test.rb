@@ -9,8 +9,8 @@ class StudentTest < Minitest::Test
     @out = StringIO.new
     @old_stdout = $stdout
     $stdout = @out
-    @student1 = Student.new('John', 123, 10_000)
-    @student2 = Student.new('Mary', 222, 25_000)
+    @student1 = Student.new(name: 'John', id: 123, anual_income: 10_000)
+    @student2 = Student.new(id: 222, anual_income: 25_000, name: 'Mary')
     @student1.add_grade(90).add_grade(84).add_grade(93)
   end
 
