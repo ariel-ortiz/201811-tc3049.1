@@ -1,25 +1,28 @@
 #--------------------------------------------------------------------
-# An external iterator for an array.
-# Taken from [OLSEN] pp 128-129.
-class ArrayIterator
-
-  def initialize(array)
-    @array = array
-    @index = 0
+# Adapts an Enumerator to work like the original ArrayIterator.
+class EnumeratorAdapter
+  
+  def initialize(enum)
+    @enum = enum
   end
-
+  
   def has_next?
-    @index < @array.length
+    begin
+      @enum.peek
+      true
+    rescue StopIteration
+      false
+    end
   end
-
+  
   def item
-    @array[@index]
+    return nil if !has_next?
+    @enum.peek
   end
   
   def next_item
-    value = @array[@index]
-    @index += 1
-    value
+    return nil if !has_next?
+    @enum.next
   end
 end
 
@@ -29,8 +32,8 @@ end
 def merge(array1, array2)
   merged = []
 
-  iterator1 = ArrayIterator.new(array1)
-  iterator2 = ArrayIterator.new(array2)
+  iterator1 = EnumeratorAdapter.new(array1.to_enum)
+  iterator2 = EnumeratorAdapter.new(array2.to_enum)
 
   while (iterator1.has_next? and iterator2.has_next?)
     if iterator1.item < iterator2.item
@@ -52,3 +55,8 @@ def merge(array1, array2)
 
   merged
 end
+
+a = [3, 4, 5, 6, 7, 7, 10]
+b = [1, 2, 3, 5, 7, 20, 30]
+c = merge(a, b)
+p c
