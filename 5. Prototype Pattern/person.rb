@@ -1,5 +1,5 @@
-# 1. What is the Prototype Pattern.
-# 2. How can we apply this pattern to the class Person.
+# 1. What is the Prototype Pattern?
+# 2. How can we apply this pattern to the class Person?
 
 class Person
   
