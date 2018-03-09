@@ -40,6 +40,12 @@ class Person
   attr_writer :name, :favorite_things
 end
 
+class SubPerson < Person
+  def hello
+    "Hello"
+  end
+end
+
 p1 = Person.new('Donald')
 p1 << 'Cheeseburger'
 p1 << 'Pretty girls'
@@ -55,3 +61,11 @@ p p2.to_enum.to_a
 # There is still some sharing issues one level deeper!
 p1.favorite_things[0][0] = 's'
 p p2.to_enum.to_a
+
+s1 = SubPerson.new('Eric')
+s2 = s1.clone
+
+p s1.class
+p s2.class
+p s1.hello
+p s2.hello
