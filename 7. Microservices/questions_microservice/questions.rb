@@ -16,6 +16,10 @@ before do
   content_type :json
 end
 
+not_found do
+  {'error' => "Resource not found: #{ request.path_info }"}.to_json
+end
+
 get '/questions' do
   JSON.pretty_generate(questions.map.with_index do |q, i|
     {
