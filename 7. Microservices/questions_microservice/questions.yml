@@ -1,0 +1,44 @@
+-   question: "This SOLID principle states that a class (or function) should be open for extension but closed for modification."
+    options:
+        - "Single Responsibility"
+        - "Open/Closed"
+        - "Liskov Substitution"
+        - "Interface Segregation"
+        - "Dependency Inversion"
+    answer: 1
+
+-   question: "This SOLID principle states that a class or module should have one, and only one, reason to change."
+    options:
+        - "Single Responsibility"
+        - "Open/Closed"
+        - "Liskov Substitution"
+        - "Interface Segregation"
+        - "Dependency Inversion"
+    answer: 0
+
+-   question: "This SOLID principle says to depend upon abstractions, not upon concretions."
+    options:
+        - "Single Responsibility"
+        - "Open/Closed"
+        - "Liskov Substitution"
+        - "Interface Segregation"
+        - "Dependency Inversion"
+    answer: 4
+
+-   question: "This SOLID principle states that many client-specific interfaces are better than one general-purpose interface."
+    options:
+        - "Single Responsibility"
+        - "Open/Closed"
+        - "Liskov Substitution"
+        - "Interface Segregation"
+        - "Dependency Inversion"
+    answer: 3
+
+-   question: "This SOLID principle states that if a program module is using a base class, then the reference to the base class can be replaced with a derived class without affecting the functionality of the program module."
+    options:
+        - "Single Responsibility"
+        - "Open/Closed"
+        - "Liskov Substitution"
+        - "Interface Segregation"
+        - "Dependency Inversion"
+    answer: 2
